@@ -39,7 +39,7 @@ Este proyecto es un sistema de consola para la gestión de usuarios en un E-comm
 
 - `crud_usuarios.sql` → Insert, Select, Update y Delete para la tabla `usuarios`.
 
-NOTA: Dichos archivos estan nombrados en formato txt
+### NOTA: Dichos archivos estan nombrados en formato txt
 ---
 
 ##  Conceptos aplicados
