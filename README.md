@@ -73,18 +73,14 @@ NOTA: Dichos archivos estan nombrados en formato txt
 
 ##  Funcionalidades por rol
 
-| Acción | Usuario estándar | Administrador |
+# Permisos de Usuario
 
-|-----|----|----|
-
-| Ver sus datos                | ✅   | ✅ |
-
-| Ver todos los usuarios       | ❌   | ✅ |
-
-| Cambiar rol de otro usuario  | ❌   | ✅ |
-
-| Eliminar un usuario          | ❌   | ✅ |
-
+| Acción                     | Usuario estándar | Administrador |
+|----------------------------|------------------|---------------|
+| Ver sus datos              | ✅               | ✅            |
+| Ver todos los usuarios     | ❌               | ✅            |
+| Cambiar rol de otro usuario| ❌               | ✅            |
+| Eliminar un usuario        | ❌               | ✅            |
 ---
 
 ## Estructura del proyecto
