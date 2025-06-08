@@ -106,7 +106,12 @@ innovaweb_ecommerce/
 ```
 
 ## Diagramas del proyecto
-![alt text](/images/)
+
+# Diagrama de Clases
+![alt text](/images/[![deepseek-mermaid-20250608-c5460a.png](https://i.postimg.cc/xCBTD9JS/deepseek-mermaid-20250608-c5460a.png)](https://postimg.cc/YGfwQKzX))
+
+# Diagrama de Base de datos
+![alt text](/images/[![diagrama-bd-relacional-cardinal.png](https://i.postimg.cc/DfrLdzSG/diagrama-bd-relacional-cardinal.png)](https://postimg.cc/9zfDcCtX))
 
 ## Integrantes del proyecto
 
