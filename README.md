@@ -3,82 +3,110 @@ Proyecto E-Commerce InnovaWeb. Evidencia de Aprendizaje N° 3
 
 # Gestión de Usuarios para E-commerce
 
-Este proyecto proporciona un sistema de gestión de usuarios para plataformas de e-commerce, con control de acceso basado en roles (administrador y usuario estándar), validaciones de seguridad y una base de datos MySQL.
+Este proyecto es un sistema de consola para la gestión de usuarios en un E-commerce de tecnología, donde los usuarios pueden registrarse, iniciar sesión y acceder a funcionalidades específicas según su rol (administrador o usuario estándar). Además, se diseñó una base de datos relacional en MySQL para estructurar los datos del sistema, aunque el código funciona sin persistencia.
 
 ## Características principales
 
-- **Autenticación segura**: Hash SHA-256 para contraseñas
-- **Control de acceso**: Roles de administrador y usuario estándar
-- **Base de datos MySQL**: Estructura modular para fácil integración
-- **Validaciones**: Contraseñas con requisitos mínimos de seguridad
-- **Entorno configurable**: Mediante variables de entorno
+- Registrar e iniciar sesión de usuarios con validaciones seguras.
+- Control de acceso mediante roles.
+- Menús personalizados según el tipo de usuario.
+- Diseño de una base de datos en tercera forma normal (3FN).
+- Aplicación de principios de Programación Orientada a Objetos (POO).
 
-## Requisitos previos
+##  Tecnologías utilizadas
 
-- Python 3.x
-- MySQL Server
-- pip (Gestor de paquetes de Python)
+- **Lenguaje:** Python 3.x
 
-## Instalación
+- **Editor:** Visual Studio Code
 
-1. **Configuración de la base de datos**:
-   - Instalar MySQL
-   - Ejecutar el script `db_creation.sql` para crear la base de datos
+- **Base de Datos:** MySQL (para modelado, sin conexión directa)
 
-2. **Configurar variables de entorno**:
-   Crear un archivo `.env` con el siguiente contenido:
-   ```
-   DB_HOST=localhost
-   DB_USER=tu_usuario
-   DB_PASSWORD=tu_contraseña
-   DB_NAME=ecommerce_db
-   ```
+- **Modelo relacional:** Normalizado a 3FN
 
-3. **Instalar dependencias**:
-   ```bash
-   pip install mysql-connector-python python-dotenv
-   ```
+## Instrucciones para ejecutar
 
-## Ejecución
+1. Cloná o descargá el repositorio.
 
-```bash
-python src/main.py
-```
+2. Abrí la carpeta del proyecto desde VS Code.
 
-## Pruebas iniciales
+3. Asegurate de tener instaladas las extensiones de Python.
 
-1. Registrar un usuario administrador:
-   - Email: `admin@ecommerce.com`
-   - Contraseña: `admin123`
+4. Ejecutá el archivo `main.py`.
 
-2. Iniciar sesión como administrador y probar las funciones de gestión
+##  Archivos SQL incluidos
 
-3. Registrar un usuario estándar y verificar las restricciones de acceso
+- `crear_bd.sql` → Script para crear las tablas y relaciones.
+
+- `crud_usuarios.sql` → Insert, Select, Update y Delete para la tabla `usuarios`.
+
+---
+
+##  Conceptos aplicados
+
+- Programación Orientada a Objetos (POO)
+
+- Encapsulamiento de datos
+
+- Modularidad y separación de responsabilidades
+
+- Nomenclatura estándar (snake_case)
+
+- Validación con expresiones regulares
+
+- Modelado entidad-relación
+
+- Integridad referencial en bases de datos
+
+
+##  Validaciones implementadas
+
+- Contraseña: mínimo 6 caracteres, debe incluir letras y números (usando expresiones regulares).
+
+- Validación de usuario duplicado.
+
+- Control de errores con mensajes claros.
+
+- Acceso restringido por rol (`usuario` o `admin`).
+
+---
+
+##  Funcionalidades por rol
+
+| Acción                        | Usuario estándar | Administrador |
+
+|------------------------------|------------------|---------------|
+
+| Ver sus datos                | ✅               | ✅            |
+
+| Ver todos los usuarios       | ❌               | ✅            |
+
+| Cambiar rol de otro usuario  | ❌               | ✅            |
+
+| Eliminar un usuario          | ❌               | ✅            |
+
+---
 
 ## Estructura del proyecto
 
 ```
-ecommerce-users/
+innovaweb_ecommerce/
 │
-├── src/                 # Código fuente principal
-├── db_creation.sql      # Script de creación de la base de datos
-├── .env.example         # Ejemplo de configuración de entorno
-└── requirements.txt     # Dependencias del proyecto
+├── src/                  # Código fuente principal
+│    ├── main.py          # Punto de entrada del programa  
+│    ├── menu.py          # Menú por rol
+│    ├── auth.py          # Funciones de registro y login
+│    └── user.py          # Clase Usuario
+│
+├── database/             # Base de datos
+│    ├── Creacion de tablas.txt  # Script de la base de datos
+│    └── CRUD para Usuarios.txt  # Consultas Clase Usuario
+│
+├── docs/          # Diagramas
+│    ├── Diagrama de Clases.png  
+|    └── Diagrama de Base de datos.png
+│
+└── Readme.md       
 ```
-
-## Consideraciones de seguridad
-
-- Las contraseñas se almacenan con hash SHA-256
-- Validación de contraseñas con requisitos mínimos
-- Control de acceso basado en roles
-
-## Mejoras futuras
-
-- [ ] Implementar recuperación de contraseña
-- [ ] Añadir logging de actividades
-- [ ] Desarrollar interfaz gráfica
-- [ ] Agregar más validaciones en formularios
-
 
 ## Diagramas del proyecto
 ![alt text](/images/)
