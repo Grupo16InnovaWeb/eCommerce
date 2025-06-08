@@ -105,12 +105,12 @@ innovaweb_ecommerce/
 └── Readme.md       
 ```
 
-## Diagramas del proyecto
+# Diagramas del proyecto
 
-# Diagrama de Clases
+## Diagrama de Clases
 [![deepseek-mermaid-20250608-c5460a.png](https://i.postimg.cc/xCBTD9JS/deepseek-mermaid-20250608-c5460a.png)](https://postimg.cc/YGfwQKzX))
 
-# Diagrama de Base de datos
+## Diagrama de Base de datos
 [![diagrama-bd-relacional-cardinal.png](https://i.postimg.cc/DfrLdzSG/diagrama-bd-relacional-cardinal.png)](https://postimg.cc/9zfDcCtX))
 
 ## Integrantes del proyecto
