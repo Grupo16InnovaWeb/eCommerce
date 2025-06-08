@@ -79,5 +79,16 @@ ecommerce-users/
 - [ ] Desarrollar interfaz gráfica
 - [ ] Agregar más validaciones en formularios
 
+
+## Diagramas del proyecto
+![alt text](/images/)
+
 ## Integrantes del proyecto
 
+| Nombre | Rol en el Proyecto |
+|------|-----|
+| Acosta Johana Vanessa | Base de datos |
+| Andreoli Fernando Daniel | Base de datos |
+| Crespin Marianela Jenifer | Python |
+| Molina Ricardo Alberto | Python |
+| Vaca Cristian Andres | Python |
