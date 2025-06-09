@@ -7,9 +7,9 @@ class Usuario:
         - contraseña: clave de acceso (mín. 6 caracteres, debe tener letras y números)
         - rol: 'admin' o 'usuario'
     """
-    def __init__(self, nombre_usuario, contraseña, rol="usuario"):
+    def __init__(self, nombre_usuario, contrasenia, rol="usuario"):
         self.nombre_usuario = nombre_usuario
-        self.contraseña = contraseña
+        self.contrasenia = contrasenia
         self.rol = rol
 
     def mostrar_datos(self):
