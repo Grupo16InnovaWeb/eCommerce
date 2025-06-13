@@ -1,4 +1,4 @@
-from auth import buscar_usuario
+from eCommerce.src.sistema_auth import buscar_usuario
 
 
 # archivo: menu.py
