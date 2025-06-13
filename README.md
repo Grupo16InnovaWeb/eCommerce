@@ -90,8 +90,8 @@ innovaweb_ecommerce/
 │
 ├── src/                  # Código fuente principal
 │    ├── main.py          # Punto de entrada del programa  
-│    ├── menu.py          # Menú por rol
-│    ├── auth.py          # Funciones de registro y login
+│    ├── menu_sistema.py          # Menú por rol
+│    ├── sistema_auth.py          # Funciones de registro y login
 │    └── user.py          # Clase Usuario
 │
 ├── database/             # Base de datos
